@@ -2,20 +2,19 @@
 
 This Docker image, will setup a system so your ember tests can be executed inside the container itself.
 
+Based on repository here: https://github.com/BookerSoftwareInc/emberjs-docker-testing.
+
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest` (Dockerfile)](https://github.com/CareerJSM/docker-emberjs-testing/blob/master/Dockerfile)
+- latest
+- 12.8.1
 
 ## Run the Image
 
 ```
-docker run --rm -ti -v $PWD:/app -p 7357:7357 lugana707/emberjs-docker-testing:latest bash
+docker run --rm -ti -v $PWD:/app -p 7357:7357 careerjsm/emberjs-docker-testing:latest bash
 ```
 
 ### Run Your Tests
 
-Now that you are in the container, you can run the following command
-
-```
-# ember test --server
-```
+Now that you are in the container, you can run the following command `ember test --server`.
