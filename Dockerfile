@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:experimental
 
-FROM node:12.8.1-stretch
+FROM node:12.22-stretch
 
 RUN \
   --mount=id=apt-cache,type=cache,target=/var/cache/apt \
