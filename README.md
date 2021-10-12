@@ -12,7 +12,7 @@ Based on repository here: https://github.com/BookerSoftwareInc/emberjs-docker-te
 ## Run the Image
 
 ```
-docker run --rm -ti -v $PWD:/app -p 7357:7357 careerjsm/emberjs-docker-testing:latest bash
+docker run --rm -ti -v $PWD:/app -p 7357:7357 careerjsm/docker-emberjs-testing:latest bash
 ```
 
 ### Run Your Tests
