@@ -18,11 +18,10 @@ RUN \
   ln -s /usr/bin/nodejs /usr/bin/node && \
   npm install bower ember-cli -g && \
   rm -rf /var/lib/apt/lists/* && \
-  git clone https://github.com/facebook/watchman.git && \
+  git clone https://github.com/facebook/watchman.git -b v4.9.0 --depth 1 && \
   cd watchman && \
-  git checkout v4.9.0 && \
   ./autogen.sh && \
-  ./configure && \
+  ./configure --enable-lenient && \
   make && \
   make install
 
