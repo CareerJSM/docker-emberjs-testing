@@ -56,7 +56,6 @@ jobs:
         uses: aquasecurity/trivy-action@0.0.17
         with:
           image-ref: ${{ steps.build-docker-image-using-cache.outputs.FULL_IMAGE_NAME }}:${{ github.sha }}
-          exit-code: 1
           severity: CRITICAL
           format: table
       - name: Define IMAGE_TAG (master)
