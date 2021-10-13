@@ -8,11 +8,12 @@ Based on repository here: https://github.com/BookerSoftwareInc/emberjs-docker-te
 
 - latest
 - 12.8.1
+- 14.18.0
 
 ## Run the Image
 
 ```
-docker run --rm -ti -v $PWD:/app -p 7357:7357 careerjsm/emberjs-docker-testing:latest bash
+docker run --rm -ti -v $PWD:/app -p 7357:7357 careerjsm/docker-emberjs-testing:latest bash
 ```
 
 ### Run Your Tests
