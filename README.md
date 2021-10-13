@@ -8,6 +8,7 @@ Based on repository here: https://github.com/BookerSoftwareInc/emberjs-docker-te
 
 - latest
 - 12.8.1
+- 14.18.0
 
 ## Run the Image
 
