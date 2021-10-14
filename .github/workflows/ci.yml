@@ -65,6 +65,8 @@ jobs:
         if: ${{ contains(github.ref, 'tags') }}
         run: echo "IMAGE_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
       - name: Build and publish Docker Image to GitHub Packages Registry
+        uses: VaultVulp/gp-docker-action@1.1.8
+        if: ${{ env.IS_DEPLOYMENT == 'true' }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image-name: docker-emberjs-testing
