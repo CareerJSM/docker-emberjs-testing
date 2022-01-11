@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:experimental
 
-FROM node:17-buster
+FROM node:14-bullseye
 
 RUN \
   --mount=id=apt-cache,type=cache,target=/var/cache/apt \
