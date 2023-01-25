@@ -14,6 +14,7 @@ RUN \
   wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
   echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list && \
   apt-get update -qqy && \
+  apt-get upgrade -qqy && \
   apt-get -qqy install google-chrome-unstable && \
   ln -s /usr/bin/nodejs /usr/bin/node && \
   npm install bower ember-cli -g && \
